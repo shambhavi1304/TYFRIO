@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <LINK REL="SHORTCUT ICON" HREF="logo.jpg">
+  <title>TYFRIO-Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.active{
+  background-color: #a6a6a6;
+}
+img {
+  opacity: 0.5;
+}
+</style>
+</head>
+<body>
+
+
+  
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand">
+            <img src="logo.jpg" height="50" alt="logo">
+        </a>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a style="color: #8dc73e" href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+      <li><a style="color: #8dc73e" href="TYhtw.html"><span class="glyphicon glyphicon-cog"></span>How it works?</a></li>
+      <li><a style="color: #8dc73e" href="TYfeatures.html"><span class="glyphicon glyphicon-wrench"></span> Features</a></l>
+      <li><a style="color: #8dc73e" href="TYcontact.html"><span class="glyphicon glyphicon-earphone"></span>Contact Us</l>
+      <li><a style="color: #8dc73e" href="TYsignup.html"><span class="glyphicon glyphicon-user"></span>Sign-Up</a></li>
+      <li><a style="color: #8dc73e" href="TYsignin.html"><span class="glyphicon glyphicon-log-in"></span>Sign-In</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+<div style="width:100%;height:580px;">
+  <img class="mySlides" src="1st.jpg" style="float:left;width:100%;height:90%;object-fit:cover;">
+  <img class="mySlides" src="2nd.jpg" style="float:left;width:100%;height:90%;object-fit:cover;">
+  <img class="mySlides" src="3rd.jpg" style="float:left;width:100%;height:90%;object-fit:cover;">
+  <img class="mySlides" src="4th.jpg" style="float:left;width:100%;height:90%;object-fit:cover;">
+  <div class="centered"><p><h1><center>TYFRIO is the easiest way<br>to grow fresh and healthy crops at your home</center></h1></p><br><br>
+     <p><h3><center><b><h3>Sign-up to know how we are bringing agriculture to your house</center></h3></b><p>
+     <form action="/action_page.php" class="container">
+        <label for="email"></label>
+        <input type="text" placeholder="Your Email" aria-label="" aria-describedby="basic-addon1" name="email" required>
+        <button type="button" class="btn btn-success">Success</button>
+     </form>
+ </div>
+</div>
+
+ </div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500); // slide show time duration
+}
+</script>
+
+</body>
+</html>
